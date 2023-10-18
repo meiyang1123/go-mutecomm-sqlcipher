@@ -110,7 +110,7 @@ var SQLiteTimestampFormats = []string{
 }
 
 func init() {
-	sql.Register("sqlite3", &SQLiteDriver{})
+	sql.Register("sqlcipher", &SQLiteDriver{})
 }
 
 // Version returns SQLite library version information.
